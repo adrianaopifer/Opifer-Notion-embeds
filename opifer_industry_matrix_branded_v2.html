@@ -1,0 +1,232 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --orange:#D94E1A;--coral:#FF9A6B;--charcoal:#2E2E2E;
+  --teal:#2A9D8F;--slate:#264653;--gold:#E9C46A;
+  --stone:#B0BEC5;--sand:#F4EFE6;--mist:#FAFAF7;--rule:#E6E0D4;
+}
+.wrap{background:var(--charcoal);padding:28px 24px;font-family:'Inter',sans-serif;color:#fff;}
+.header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:16px;margin-bottom:22px;}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand-name{font-family:'Manrope';font-weight:800;font-size:17px;color:#fff;letter-spacing:-.3px;}
+.brand-sub{font-family:'JetBrains Mono';font-size:9px;color:rgba(255,255,255,.4);letter-spacing:1.5px;text-transform:uppercase;}
+.eyebrow{font-family:'JetBrains Mono';font-size:8.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--orange);margin-bottom:8px;}
+.section-title{font-family:'Manrope';font-weight:800;font-size:22px;color:#fff;letter-spacing:-1px;margin-bottom:6px;line-height:1.1;}
+.section-title em{color:var(--coral);font-style:italic;}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px;padding:10px 12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:2px;}
+.leg-item{display:flex;align-items:center;gap:7px;font-family:'JetBrains Mono';font-size:8px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.5);}
+.leg-dot{width:8px;height:8px;border-radius:1px;flex-shrink:0;}
+.region-block{margin-bottom:16px;border:1px solid rgba(255,255,255,.08);border-radius:2px;overflow:hidden;}
+.region-header{display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.08);}
+.region-flag{font-size:16px;line-height:1;}
+.region-name{font-family:'Manrope';font-weight:700;font-size:12px;color:#fff;letter-spacing:-.2px;}
+.region-tag{margin-left:auto;font-family:'JetBrains Mono';font-size:8px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.35);}
+.col-headers{display:grid;grid-template-columns:20px minmax(0,1fr) 72px minmax(0,1fr) minmax(0,1.1fr);background:rgba(0,0,0,.2);border-bottom:1px solid rgba(255,255,255,.07);}
+.ch{font-family:'JetBrains Mono';font-size:7.5px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);padding:6px 10px;}
+.row{display:grid;grid-template-columns:20px minmax(0,1fr) 72px minmax(0,1fr) minmax(0,1.1fr);border-bottom:1px solid rgba(255,255,255,.05);}
+.row:last-child{border-bottom:none;}
+.rk{display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono';font-size:10px;color:rgba(255,255,255,.2);border-right:1px solid rgba(255,255,255,.06);}
+.c{padding:9px 10px;border-right:1px solid rgba(255,255,255,.06);}
+.c:last-child{border-right:none;}
+.ind-name{font-family:'Manrope';font-weight:700;font-size:11px;color:#fff;letter-spacing:-.1px;margin-bottom:3px;}
+.ind-why{font-family:'Inter';font-size:10px;color:rgba(255,255,255,.4);line-height:1.4;}
+.pill{display:inline-block;font-family:'JetBrains Mono';font-size:8px;letter-spacing:.5px;padding:2px 6px;margin:2px 2px 0 0;border-radius:1px;}
+.p-orange{background:rgba(217,78,26,.25);color:var(--coral);}
+.p-teal{background:rgba(42,157,143,.2);color:#5EC9BE;}
+.p-stone{background:rgba(176,190,197,.15);color:var(--stone);}
+.p-slate{background:rgba(38,70,83,.5);color:#7BAFC0;}
+.tier-badge{display:inline-block;font-family:'Manrope';font-weight:700;font-size:9px;letter-spacing:.3px;padding:3px 9px;border-radius:1px;margin-bottom:5px;}
+.tier-reason{font-family:'Inter';font-size:9.5px;color:rgba(255,255,255,.4);line-height:1.4;}
+.scale-text{font-family:'Inter';font-size:10px;color:rgba(255,255,255,.5);line-height:1.45;}
+.attr{font-family:'JetBrains Mono';font-size:8px;color:rgba(255,255,255,.15);letter-spacing:1px;text-transform:uppercase;margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,.07);}
+</style>
+
+<div class="wrap">
+  <div class="header">
+    <div class="brand">
+      <svg width="30" height="30" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="256,40 440,160 440,352 256,472 72,352 72,160" fill="none" stroke="#D94E1A" stroke-width="16"/>
+        <ellipse cx="256" cy="256" rx="80" ry="60" fill="#FF9A6B" opacity=".7"/>
+        <line x1="256" y1="160" x2="256" y2="352" stroke="#D94E1A" stroke-width="12"/>
+        <circle cx="210" cy="230" r="8" fill="#2E2E2E"/>
+        <circle cx="302" cy="230" r="8" fill="#2E2E2E"/>
+      </svg>
+      <div><div class="brand-name">OPIFER</div><div class="brand-sub">BY ADMA CONSULTING</div></div>
+    </div>
+    <div style="text-align:right;"><div class="brand-sub">Market strategy · 2026</div><div class="brand-sub" style="margin-top:3px;">Five regions · 15 industries</div></div>
+  </div>
+
+  <div class="eyebrow">Target industries</div>
+  <div class="section-title">Where to focus.<br><em>How to close.</em></div>
+
+  <div class="legend">
+    <div class="leg-item"><div class="leg-dot" style="background:var(--stone);"></div>Starter · $5K / $397</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--teal);"></div>Growth · $7.5K / $497</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--orange);"></div>Pro · $10K / $697</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--gold);"></div>Scale · $15K / $997</div>
+  </div>
+
+  <div class="region-block">
+    <div class="region-header" style="border-left:3px solid var(--orange);">
+      <span class="region-flag">🇦🇺</span>
+      <span class="region-name">Australia</span>
+      <span class="region-tag">Highest readiness · $10K viable</span>
+    </div>
+    <div class="col-headers">
+      <div class="ch"></div><div class="ch">Industry</div><div class="ch">Best tier</div><div class="ch">GHL tools</div><div class="ch">Scaling tactic</div>
+    </div>
+    <div class="row">
+      <div class="rk">1</div>
+      <div class="c"><div class="ind-name">Trades & home services</div><div class="ind-why">High missed-call volume, cash-rich, reputation-driven</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(42,157,143,.2);color:#5EC9BE;">Growth</div><div class="tier-reason">Voice AI ROI is immediate; $30–60K/mo revenue fits $497/mo</div></div>
+      <div class="c"><span class="pill p-orange">Voice AI</span><span class="pill p-orange">Missed Calls</span><span class="pill p-teal">Reviews AI</span><span class="pill p-stone">Workflow AI</span></div>
+      <div class="c"><span class="scale-text">Partner with trade associations. "Never miss a job" guarantee. Upsell to Pro once Voice AI ROI is proven.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">2</div>
+      <div class="c"><div class="ind-name">Dental & medical clinics</div><div class="ind-why">Appointment-heavy, review-sensitive, admin-burdened</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(217,78,26,.2);color:var(--coral);">Pro</div><div class="tier-reason">Multi-chair practices at $60K+/mo; reactivation campaigns justify outbound</div></div>
+      <div class="c"><span class="pill p-orange">Voice AI</span><span class="pill p-teal">Reviews AI</span><span class="pill p-stone">Conversation AI</span><span class="pill p-slate">Funnel AI</span></div>
+      <div class="c"><span class="scale-text">Build replicable "clinic growth snapshot." 1 case study unlocks 10 practices. Target owners, not managers.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">3</div>
+      <div class="c"><div class="ind-name">Real estate agencies</div><div class="ind-why">24/7 enquiry gap, lead volume problems, funnel leaks</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(42,157,143,.2);color:#5EC9BE;">Growth</div><div class="tier-reason">Boutique agencies; funnel + Conversation AI is the core pitch</div></div>
+      <div class="c"><span class="pill p-slate">Funnel AI</span><span class="pill p-orange">Voice AI</span><span class="pill p-stone">Conversation AI</span><span class="pill p-teal">Reviews AI</span></div>
+      <div class="c"><span class="scale-text">Target boutiques, not Ray White franchises. Position AI as how they compete without matching headcount.</span></div>
+    </div>
+  </div>
+
+  <div class="region-block">
+    <div class="region-header" style="border-left:3px solid var(--teal);">
+      <span class="region-flag">🇺🇸</span>
+      <span class="region-name">USA — Hispanic market</span>
+      <span class="region-tag">5M+ businesses · WhatsApp-first</span>
+    </div>
+    <div class="col-headers">
+      <div class="ch"></div><div class="ch">Industry</div><div class="ch">Best tier</div><div class="ch">GHL tools</div><div class="ch">Scaling tactic</div>
+    </div>
+    <div class="row">
+      <div class="rk">1</div>
+      <div class="c"><div class="ind-name">Medical & dental clinics</div><div class="ind-why">Bilingual AI is a key differentiator; high patient value</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(217,78,26,.2);color:var(--coral);">Pro</div><div class="tier-reason">Bilingual Voice AI + outbound reactivation; $697/mo justified</div></div>
+      <div class="c"><span class="pill p-orange">Voice AI</span><span class="pill p-stone">Conversation AI</span><span class="pill p-teal">Reviews AI</span><span class="pill p-slate">Funnel AI</span></div>
+      <div class="c"><span class="scale-text">"The only AI that speaks your patients' language." Bilingual Voice AI is near-unique in this segment.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">2</div>
+      <div class="c"><div class="ind-name">Real estate</div><div class="ind-why">Hispanic homeownership growing; agents need lead follow-up at scale</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(42,157,143,.2);color:#5EC9BE;">Growth</div><div class="tier-reason">Funnel + bilingual Conversation AI; $497/mo accessible entry</div></div>
+      <div class="c"><span class="pill p-slate">Funnel AI</span><span class="pill p-orange">Voice AI</span><span class="pill p-stone">Conversation AI</span></div>
+      <div class="c"><span class="scale-text">Partner with NAHREP chapters. Community trust = faster close. Spanish-language onboarding is your edge.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">3</div>
+      <div class="c"><div class="ind-name">Home services & contractors</div><div class="ind-why">Huge Hispanic-owned base; referral-dependent; no systems</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(176,190,197,.2);color:var(--stone);">Starter</div><div class="tier-reason">Entry offer; prove ROI on missed calls fast, then upsell to Growth</div></div>
+      <div class="c"><span class="pill p-orange">Missed Calls</span><span class="pill p-teal">Reviews AI</span><span class="pill p-stone">Workflow AI</span></div>
+      <div class="c"><span class="scale-text">Sell via Spanish YouTube + Facebook groups. "You lose $X per missed call." Onboard entirely in Spanish.</span></div>
+    </div>
+  </div>
+
+  <div class="region-block">
+    <div class="region-header" style="border-left:3px solid var(--coral);">
+      <span class="region-flag">🇪🇸</span>
+      <span class="region-name">Spain</span>
+      <span class="region-tag">Early adopter · First-mover advantage</span>
+    </div>
+    <div class="col-headers">
+      <div class="ch"></div><div class="ch">Industry</div><div class="ch">Best tier</div><div class="ch">GHL tools</div><div class="ch">Scaling tactic</div>
+    </div>
+    <div class="row">
+      <div class="rk">1</div>
+      <div class="c"><div class="ind-name">Clínicas de estética & salud</div><div class="ind-why">Review-dependent, appointment-heavy, price-competitive</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(42,157,143,.2);color:#5EC9BE;">Growth</div><div class="tier-reason">€350/mo accessible; Voice AI + Reviews is the full pitch</div></div>
+      <div class="c"><span class="pill p-teal">Reviews AI</span><span class="pill p-orange">Voice AI</span><span class="pill p-slate">Funnel AI</span><span class="pill p-stone">Conversation AI</span></div>
+      <div class="c"><span class="scale-text">"Clínica sin recepcionista" case study. Low AI literacy = you educate while selling. Spanish webinars position you as the authority.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">2</div>
+      <div class="c"><div class="ind-name">Inmobiliarias (real estate)</div><div class="ind-why">Fragmented boutique market; terrible lead response speed</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(176,190,197,.2);color:var(--stone);">Starter</div><div class="tier-reason">€250/mo entry; low AI maturity means Starter is already a leap</div></div>
+      <div class="c"><span class="pill p-slate">Funnel AI</span><span class="pill p-orange">Voice AI</span><span class="pill p-stone">Conversation AI</span></div>
+      <div class="c"><span class="scale-text">Target Valencia, Seville, Málaga — lower tech competition. WhatsApp Business as entry point.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">3</div>
+      <div class="c"><div class="ind-name">Academias & formación profesional</div><div class="ind-why">Booming sector; enrollment funnels are manual and leaky</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(176,190,197,.2);color:var(--stone);">Starter</div><div class="tier-reason">€250/mo; digital spend growing; strong enrollment funnel ROI</div></div>
+      <div class="c"><span class="pill p-slate">Funnel AI</span><span class="pill p-stone">Conversation AI</span><span class="pill p-teal">Reviews AI</span></div>
+      <div class="c"><span class="scale-text">Education companies invest more in digital than other Spanish SMEs. Pitch automated enrollment + student nurture as one system.</span></div>
+    </div>
+  </div>
+
+  <div class="region-block">
+    <div class="region-header" style="border-left:3px solid var(--gold);">
+      <span class="region-flag">🇲🇽</span>
+      <span class="region-name">Mexico</span>
+      <span class="region-tag">Mid-market focus · WhatsApp dominant</span>
+    </div>
+    <div class="col-headers">
+      <div class="ch"></div><div class="ch">Industry</div><div class="ch">Best tier</div><div class="ch">GHL tools</div><div class="ch">Scaling tactic</div>
+    </div>
+    <div class="row">
+      <div class="rk">1</div>
+      <div class="c"><div class="ind-name">Clínicas dentales & médicas</div><div class="ind-why">Medical tourism + local demand; legacy admin processes</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(42,157,143,.2);color:#5EC9BE;">Growth</div><div class="tier-reason">WhatsApp Conversation AI + Voice AI combo; $497 justified</div></div>
+      <div class="c"><span class="pill p-orange">Voice AI</span><span class="pill p-teal">Reviews AI</span><span class="pill p-stone">Conversation AI</span></div>
+      <div class="c"><span class="scale-text">"Paquete clínica digital." WhatsApp AI + Google Reviews. 1 pilot clinic = door to 10 more via referral.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">2</div>
+      <div class="c"><div class="ind-name">Inmobiliarias & desarrolladores</div><div class="ind-why">Real estate booming CDMX, GDL, MTY; no CRM culture</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(217,78,26,.2);color:var(--coral);">Pro</div><div class="tier-reason">Developers manage 10–30 projects; multi-funnel + outbound reactivation justified</div></div>
+      <div class="c"><span class="pill p-slate">Funnel AI</span><span class="pill p-orange">Voice AI</span><span class="pill p-stone">Conversation AI</span></div>
+      <div class="c"><span class="scale-text">Target developers, not agents. 1 developer = system across 10–30 projects. Higher ticket, stronger ROI argument.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">3</div>
+      <div class="c"><div class="ind-name">Gimnasios & wellness centers</div><div class="ind-why">High churn problem; re-activation is a clear AI use case</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(176,190,197,.2);color:var(--stone);">Starter</div><div class="tier-reason">Price-sensitive; Starter ROI on re-engagement justifies $397</div></div>
+      <div class="c"><span class="pill p-stone">Conversation AI</span><span class="pill p-orange">Missed Calls</span><span class="pill p-teal">Reviews AI</span></div>
+      <div class="c"><span class="scale-text">"Recupera a tus clientes perdidos." Re-engagement automation: tangible, fast ROI, easy to demo.</span></div>
+    </div>
+  </div>
+
+  <div class="region-block">
+    <div class="region-header" style="border-left:3px solid var(--slate);">
+      <span class="region-flag">🇨🇴</span>
+      <span class="region-name">Colombia</span>
+      <span class="region-tag">Growing mid-market · Results-driven</span>
+    </div>
+    <div class="col-headers">
+      <div class="ch"></div><div class="ch">Industry</div><div class="ch">Best tier</div><div class="ch">GHL tools</div><div class="ch">Scaling tactic</div>
+    </div>
+    <div class="row">
+      <div class="rk">1</div>
+      <div class="c"><div class="ind-name">Salud & clínicas estética</div><div class="ind-why">Medical tourism hub; clinics compete globally on reviews</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(42,157,143,.2);color:#5EC9BE;">Growth</div><div class="tier-reason">Reviews AI + Voice AI is the pitch; $497 defensible vs. international competition</div></div>
+      <div class="c"><span class="pill p-teal">Reviews AI</span><span class="pill p-orange">Voice AI</span><span class="pill p-slate">Funnel AI</span></div>
+      <div class="c"><span class="scale-text">"Your reviews and response time are your global referral network." International patients use Google to choose clinics.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">2</div>
+      <div class="c"><div class="ind-name">Finca raíz (real estate)</div><div class="ind-why">Bogotá & Medellín booming; digital-first buyers expect instant response</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(42,157,143,.2);color:#5EC9BE;">Growth</div><div class="tier-reason">Funnel + Conversation AI solves instant-response gap; WhatsApp-native</div></div>
+      <div class="c"><span class="pill p-slate">Funnel AI</span><span class="pill p-stone">Conversation AI</span><span class="pill p-orange">Missed Calls</span></div>
+      <div class="c"><span class="scale-text">Identify top 20 agencies on Metrocuadrado. Demo a live funnel with their brand. Convert or move on quickly.</span></div>
+    </div>
+    <div class="row">
+      <div class="rk">3</div>
+      <div class="c"><div class="ind-name">Servicios profesionales (legal, accounting)</div><div class="ind-why">Brand-aware, referral-dependent, zero automation</div></div>
+      <div class="c"><div class="tier-badge" style="background:rgba(176,190,197,.2);color:var(--stone);">Starter</div><div class="tier-reason">Entry at $397 builds trust; price in COP, reference USD; upsell path is clear</div></div>
+      <div class="c"><span class="pill p-stone">Conversation AI</span><span class="pill p-slate">Funnel AI</span><span class="pill p-teal">Reviews AI</span></div>
+      <div class="c"><span class="scale-text">Starter to get the case study. Upsell to Growth after 60–90 days once ROI is visible. Price in COP with USD anchor.</span></div>
+    </div>
+  </div>
+
+  <div class="attr">OPIFER · BY ADMA CONSULTING · MARKET STRATEGY V1.0 · 2026 · opifer.com</div>
+</div>
