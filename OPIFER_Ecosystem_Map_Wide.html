@@ -6,202 +6,214 @@
 <title>OPIFER Ecosystem Map</title>
 <style>
   html, body { margin: 0; padding: 0; background: #ffffff; }
-  .wrap { width: 100%; max-width: 1480px; margin: 0 auto; padding: 16px; box-sizing: border-box; }
+  .wrap { width: 100%; max-width: 1520px; margin: 0 auto; padding: 16px; box-sizing: border-box; }
   svg { width: 100%; height: auto; display: block; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
 </style>
 </head>
 <body>
 <div class="wrap">
-<svg viewBox="0 0 1440 780" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OPIFER GoHighLevel ecosystem map">
+<svg viewBox="0 0 1440 860" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OPIFER GoHighLevel ecosystem map">
 
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
     <style>
-      .ttl   { font-size: 26px; font-weight: 700; fill: #1f2937; }
-      .sub   { font-size: 14px; font-weight: 400; fill: #6b7280; }
-      .rlab  { font-size: 12px; font-weight: 700; fill: #9ca3af; letter-spacing: 2px; }
-      .nt    { font-size: 16px; font-weight: 700; }
-      .nd    { font-size: 12.5px; font-weight: 400; fill: #4b5563; }
-      .nl    { font-size: 10px; font-weight: 700; letter-spacing: 1.2px; }
-      .alab  { font-size: 11px; font-weight: 600; }
-      .leg   { font-size: 12px; fill: #4b5563; }
-      .mono  { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 11px; }
+      .ttl  { font-size: 26px; font-weight: 700; fill: #1f2937; }
+      .sub  { font-size: 14px; font-weight: 400; fill: #6b7280; }
+      .rlab { font-size: 12px; font-weight: 700; fill: #9ca3af; letter-spacing: 2px; }
+      .nt   { font-size: 16px; font-weight: 700; }
+      .nd   { font-size: 12.5px; font-weight: 400; fill: #4b5563; }
+      .nl   { font-size: 10px; font-weight: 700; letter-spacing: 1.2px; }
+      .alab { font-size: 11px; font-weight: 600; }
+      .leg  { font-size: 12px; fill: #4b5563; }
+      .mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 11px; }
     </style>
   </defs>
 
+  <!-- TITLE -->
   <text x="40" y="44" class="ttl">OPIFER — GoHighLevel Ecosystem Map</text>
   <text x="40" y="66" class="sub">opiferai.com entry points · workflow architecture · lead routing into the Consulting Pipeline</text>
   <text x="1400" y="44" class="sub" text-anchor="end" style="font-weight:700;fill:#0f766e;">ADMA Consulting</text>
-  <text x="1400" y="64" class="mono" text-anchor="end" fill="#9ca3af">v3 · May 2026</text>
+  <text x="1400" y="64" class="mono" text-anchor="end" fill="#9ca3af">v4 · May 2026</text>
 
-  <!-- connectors -->
-  <path d="M720 138 L720 152 L240 152 L240 168" fill="none" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
-  <path d="M720 152 L720 168" fill="none" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
-  <path d="M720 152 L1200 152 L1200 168" fill="none" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <!-- ============ CONNECTORS (behind boxes) ============ -->
 
-  <line x1="240"  y1="244" x2="240"  y2="266" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
-  <line x1="720"  y1="244" x2="720"  y2="266" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
-  <line x1="1200" y1="244" x2="1200" y2="266" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <!-- website -> entries -->
+  <path d="M720 146 L720 172 L250 172 L250 198" fill="none" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <path d="M720 172 L720 198" fill="none" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <path d="M720 172 L1190 172 L1190 198" fill="none" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
 
-  <path d="M170 338 L120 338 L120 372" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
-  <path d="M310 338 L470 338 L470 470" fill="none" stroke="#2563eb" stroke-width="2.2" marker-end="url(#a)"/>
+  <!-- entries -> triggers -->
+  <line x1="250"  y1="274" x2="250"  y2="316" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <line x1="720"  y1="274" x2="720"  y2="316" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <line x1="1190" y1="274" x2="1190" y2="316" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
 
-  <path d="M790 338 L840 338 L840 372" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
-  <path d="M650 338 L510 338 L510 470" fill="none" stroke="#2563eb" stroke-width="2.2" marker-end="url(#a)"/>
+  <!-- survey split: stem + blue to pipeline + dashed to internal -->
+  <line x1="250" y1="388" x2="250" y2="400" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="250" y1="400" x2="250" y2="520" stroke="#2563eb" stroke-width="2.2" marker-end="url(#a)"/>
+  <path d="M250 400 L155 400 L155 410" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
 
-  <line x1="1200" y1="338" x2="1200" y2="470" stroke="#ea580c" stroke-width="2.2" marker-end="url(#a)"/>
+  <!-- form split: stem + blue to pipeline + dashed to internal -->
+  <line x1="720" y1="388" x2="720" y2="400" stroke="#94a3b8" stroke-width="1.6"/>
+  <path d="M720 400 L660 400 L660 520" fill="none" stroke="#2563eb" stroke-width="2.2" marker-end="url(#a)"/>
+  <path d="M720 400 L840 400 L840 410" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
 
-  <line x1="180" y1="606" x2="180" y2="638" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
-  <line x1="395" y1="606" x2="395" y2="638" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
-  <line x1="615" y1="606" x2="615" y2="638" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <!-- calculator -> calc nurture -->
+  <line x1="1190" y1="388" x2="1190" y2="520" stroke="#ea580c" stroke-width="2.2" marker-end="url(#a)"/>
 
-  <line x1="1100" y1="606" x2="1100" y2="638" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
-  <line x1="1290" y1="606" x2="1290" y2="638" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <!-- pipeline -> outcomes -->
+  <line x1="190" y1="660" x2="190" y2="706" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <line x1="405" y1="660" x2="405" y2="706" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <line x1="625" y1="660" x2="625" y2="706" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
 
-  <!-- HANDOFF ARC from the CALL BOOKED outcome box -->
-  <path d="M1000 667 L960 667 L960 622 L560 622 L560 606"
+  <!-- calc nurture -> outcomes -->
+  <line x1="1110" y1="660" x2="1110" y2="706" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+  <line x1="1295" y1="660" x2="1295" y2="706" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <!-- HANDOFF ARC: from Call booked outcome up into pipeline warm path -->
+  <path d="M1010 735 L965 735 L965 684 L560 684 L560 660"
         fill="none" stroke="#d97706" stroke-width="2.6" stroke-dasharray="8 4" marker-end="url(#a)"/>
 
-  <circle cx="240" cy="338" r="4" fill="#64748b"/>
-  <circle cx="720" cy="338" r="4" fill="#64748b"/>
+  <!-- junction dots (dual enrolment) -->
+  <circle cx="250" cy="400" r="4.5" fill="#475569"/>
+  <circle cx="720" cy="400" r="4.5" fill="#475569"/>
 
+  <!-- ============ ROW LABELS (in the gaps) ============ -->
   <text x="40" y="100" class="rlab">01 · WEBSITE</text>
-  <text x="40" y="180" class="rlab">02 · ENTRY POINTS</text>
-  <text x="40" y="278" class="rlab">03 · GHL TRIGGERS</text>
-  <text x="40" y="384" class="rlab">04 · WORKFLOWS</text>
-  <text x="40" y="650" class="rlab">05 · OUTCOMES</text>
+  <text x="40" y="184" class="rlab">02 · ENTRY POINTS</text>
+  <text x="40" y="302" class="rlab">03 · GHL TRIGGERS</text>
+  <text x="40" y="508" class="rlab">04 · WORKFLOWS</text>
+  <text x="40" y="694" class="rlab">05 · OUTCOMES</text>
 
-  <g>
-    <rect x="360" y="106" width="720" height="32" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
-    <text x="720" y="127" text-anchor="middle" class="nt" fill="#1d4ed8">opiferai.com</text>
-  </g>
+  <!-- ============ 01 WEBSITE ============ -->
+  <rect x="380" y="112" width="680" height="34" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="134" text-anchor="middle" class="nt" fill="#1d4ed8">opiferai.com</text>
 
+  <!-- ============ 02 ENTRY POINTS ============ -->
   <g>
-    <rect x="80" y="168" width="320" height="76" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
-    <text x="100" y="190" class="nl" fill="#0d9488">CTA BUTTONS</text>
-    <text x="100" y="212" class="nt" fill="#0f766e">Get Started / Growth Journey</text>
-    <text x="100" y="232" class="nd">Routes to the Opifer survey questionnaire</text>
+    <rect x="90" y="198" width="320" height="76" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
+    <text x="110" y="220" class="nl" fill="#0d9488">CTA BUTTONS</text>
+    <text x="110" y="242" class="nt" fill="#0f766e">Get Started / Growth Journey</text>
+    <text x="110" y="262" class="nd">Routes to the Opifer survey questionnaire</text>
   </g>
   <g>
-    <rect x="560" y="168" width="320" height="76" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
-    <text x="580" y="190" class="nl" fill="#0d9488">CONTACT US PAGE</text>
-    <text x="580" y="212" class="nt" fill="#0f766e">Generic contact form</text>
-    <text x="580" y="232" class="nd">Direct enquiries from site visitors</text>
+    <rect x="560" y="198" width="320" height="76" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
+    <text x="580" y="220" class="nl" fill="#0d9488">CONTACT US PAGE</text>
+    <text x="580" y="242" class="nt" fill="#0f766e">Generic contact form</text>
+    <text x="580" y="262" class="nd">Direct enquiries from site visitors</text>
   </g>
   <g>
-    <rect x="1040" y="168" width="320" height="76" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
-    <text x="1060" y="190" class="nl" fill="#0d9488">AI CALCULATOR TOOL</text>
-    <text x="1060" y="212" class="nt" fill="#0f766e">On-site ROI calculator</text>
-    <text x="1060" y="232" class="nd mono" fill="#0d9488">adds tag: calculator-lead</text>
-  </g>
-
-  <g>
-    <rect x="80" y="266" width="320" height="72" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
-    <text x="100" y="288" class="nl" fill="#b45309">GHL TRIGGER</text>
-    <text x="100" y="310" class="nt" fill="#92400e">Survey submitted</text>
-    <text x="100" y="329" class="nd">Opifer survey</text>
-  </g>
-  <g>
-    <rect x="560" y="266" width="320" height="72" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
-    <text x="580" y="288" class="nl" fill="#b45309">GHL TRIGGER</text>
-    <text x="580" y="310" class="nt" fill="#92400e">Form submitted</text>
-    <text x="580" y="329" class="nd">Opifer Contact US</text>
-  </g>
-  <g>
-    <rect x="1040" y="266" width="320" height="72" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
-    <text x="1060" y="288" class="nl" fill="#b45309">GHL TRIGGER</text>
-    <text x="1060" y="310" class="nt" fill="#92400e">Tag: calculator-lead</text>
-    <text x="1060" y="329" class="nd">No internal routing step</text>
+    <rect x="1030" y="198" width="320" height="76" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
+    <text x="1050" y="220" class="nl" fill="#0d9488">AI CALCULATOR TOOL</text>
+    <text x="1050" y="242" class="nt" fill="#0f766e">On-site ROI calculator</text>
+    <text x="1050" y="262" class="nd mono" fill="#0d9488">adds tag: calculator-lead</text>
   </g>
 
+  <!-- ============ 03 TRIGGERS ============ -->
   <g>
-    <rect x="60" y="350" width="116" height="20" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="118" y="364" text-anchor="middle" class="alab" fill="#64748b" style="text-decoration:line-through;">##Opifer internal</text>
+    <rect x="90" y="316" width="320" height="72" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="110" y="338" class="nl" fill="#b45309">GHL TRIGGER</text>
+    <text x="110" y="360" class="nt" fill="#92400e">Survey submitted</text>
+    <text x="110" y="379" class="nd">Opifer survey</text>
   </g>
   <g>
-    <rect x="396" y="392" width="148" height="20" rx="4" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
-    <text x="470" y="406" text-anchor="middle" class="alab" fill="#2563eb">enrol &#8594; Pipeline</text>
+    <rect x="560" y="316" width="320" height="72" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="580" y="338" class="nl" fill="#b45309">GHL TRIGGER</text>
+    <text x="580" y="360" class="nt" fill="#92400e">Form submitted</text>
+    <text x="580" y="379" class="nd">Opifer Contact US</text>
   </g>
   <g>
-    <rect x="782" y="350" width="132" height="20" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="848" y="364" text-anchor="middle" class="alab" fill="#64748b" style="text-decoration:line-through;">Form&#8594;Lead internal</text>
-  </g>
-  <g>
-    <rect x="436" y="430" width="148" height="20" rx="4" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
-    <text x="510" y="444" text-anchor="middle" class="alab" fill="#2563eb">enrol &#8594; Pipeline</text>
-  </g>
-
-  <g>
-    <rect x="40" y="372" width="160" height="64" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
-    <text x="56" y="393" class="nl" fill="#64748b">INTERNAL</text>
-    <text x="56" y="412" class="nt" fill="#475569" style="font-size:14px;">##Opifer</text>
-    <text x="56" y="428" class="nd" style="font-size:11px;">tag · assign · notify</text>
-  </g>
-  <g>
-    <rect x="760" y="372" width="180" height="64" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
-    <text x="776" y="393" class="nl" fill="#64748b">INTERNAL</text>
-    <text x="776" y="412" class="nt" fill="#475569" style="font-size:14px;">Form to New Lead</text>
-    <text x="776" y="428" class="nd" style="font-size:11px;">create opp · tag · notify</text>
+    <rect x="1030" y="316" width="320" height="72" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="1050" y="338" class="nl" fill="#b45309">GHL TRIGGER</text>
+    <text x="1050" y="360" class="nt" fill="#92400e">Tag: calculator-lead</text>
+    <text x="1050" y="379" class="nd">No internal routing step</text>
   </g>
 
+  <!-- ============ INTERNAL ROUTING BOXES ============ -->
   <g>
-    <rect x="60" y="470" width="660" height="136" rx="12" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.8"/>
-    <text x="84" y="494" class="nl" fill="#7c3aed">WORKFLOW</text>
-    <text x="84" y="518" class="nt" fill="#6d28d9" style="font-size:18px;">CONSULTING PIPELINE — New Leads</text>
-    <text x="84" y="540" class="nd">Three entry triggers: survey · form · &#9733; warm handoff from a booked call</text>
-    <rect x="84" y="552" width="290" height="44" rx="8" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1"/>
-    <text x="98" y="569" class="nl" fill="#7c3aed">COLD PATH</text>
-    <text x="98" y="588" class="nd" style="font-size:11.5px;">Form / survey leads &#8594; full 7-day drip sequence</text>
-    <rect x="402" y="552" width="294" height="44" rx="8" fill="#fef3c7" stroke="#fcd34d" stroke-width="1" stroke-dasharray="4 3"/>
-    <text x="416" y="569" class="nl" fill="#b45309">&#9733; WARM PATH</text>
-    <text x="416" y="588" class="nd" style="font-size:11.5px;">Booked-call leads &#8594; pre-call sequence (skips drip)</text>
+    <rect x="70" y="410" width="170" height="62" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="86" y="431" class="nl" fill="#64748b">INTERNAL ROUTING</text>
+    <text x="86" y="450" class="nt" fill="#475569" style="font-size:14px;">##Opifer</text>
+    <text x="86" y="466" class="nd" style="font-size:11px;">tag · assign · notify</text>
+  </g>
+  <g>
+    <rect x="750" y="410" width="190" height="62" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="766" y="431" class="nl" fill="#64748b">INTERNAL ROUTING</text>
+    <text x="766" y="450" class="nt" fill="#475569" style="font-size:14px;">Form to New Lead</text>
+    <text x="766" y="466" class="nd" style="font-size:11px;">create opp · tag · notify</text>
+  </g>
+
+  <!-- enrol pills on the blue lines -->
+  <g>
+    <rect x="175" y="482" width="150" height="22" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <text x="250" y="497" text-anchor="middle" class="alab" fill="#2563eb">enrol &#8594; Pipeline</text>
+  </g>
+  <g>
+    <rect x="585" y="482" width="150" height="22" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <text x="660" y="497" text-anchor="middle" class="alab" fill="#2563eb">enrol &#8594; Pipeline</text>
+  </g>
+
+  <!-- ============ 04 WORKFLOWS ============ -->
+  <g>
+    <rect x="60" y="520" width="660" height="140" rx="12" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.8"/>
+    <text x="84" y="544" class="nl" fill="#7c3aed">WORKFLOW</text>
+    <text x="84" y="568" class="nt" fill="#6d28d9" style="font-size:18px;">CONSULTING PIPELINE — New Leads</text>
+    <text x="84" y="590" class="nd">Three entry triggers: survey · form · &#9733; warm handoff from a booked call</text>
+    <rect x="84" y="602" width="290" height="46" rx="8" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1"/>
+    <text x="98" y="620" class="nl" fill="#7c3aed">COLD PATH</text>
+    <text x="98" y="639" class="nd" style="font-size:11.5px;">Form / survey leads &#8594; full 7-day drip sequence</text>
+    <rect x="402" y="602" width="294" height="46" rx="8" fill="#fef3c7" stroke="#fcd34d" stroke-width="1" stroke-dasharray="4 3"/>
+    <text x="416" y="620" class="nl" fill="#b45309">&#9733; WARM PATH</text>
+    <text x="416" y="639" class="nd" style="font-size:11.5px;">Booked-call leads &#8594; pre-call sequence (skips drip)</text>
   </g>
 
   <g>
-    <rect x="980" y="470" width="380" height="136" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.8"/>
-    <text x="1004" y="494" class="nl" fill="#ea580c">WORKFLOW</text>
-    <text x="1004" y="518" class="nt" fill="#c2410c" style="font-size:18px;">Calculator Lead Nurture</text>
-    <text x="1004" y="540" class="nd">ROI report email + intro SMS + booking link</text>
-    <text x="1004" y="560" class="nd">2-round call-booking follow-up over 7 days</text>
-    <text x="1004" y="586" class="nd" style="font-size:11.5px;">Splits into two outcomes below: booked vs not booked</text>
+    <rect x="980" y="520" width="380" height="140" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.8"/>
+    <text x="1004" y="544" class="nl" fill="#ea580c">WORKFLOW</text>
+    <text x="1004" y="568" class="nt" fill="#c2410c" style="font-size:18px;">Calculator Lead Nurture</text>
+    <text x="1004" y="590" class="nd">ROI report email + intro SMS + booking link</text>
+    <text x="1004" y="610" class="nd">2-round call-booking follow-up over 7 days</text>
+    <text x="1004" y="638" class="nd" style="font-size:11.5px;">Splits into two outcomes below: booked vs not booked</text>
+  </g>
+
+  <!-- handoff label pill -->
+  <g>
+    <rect x="640" y="672" width="240" height="22" rx="5" fill="#fffbeb" stroke="#fcd34d" stroke-width="1"/>
+    <text x="760" y="687" text-anchor="middle" class="alab" fill="#d97706">&#9733; booked call &#8594; warm pipeline entry</text>
+  </g>
+
+  <!-- ============ 05 OUTCOMES ============ -->
+  <g>
+    <rect x="90" y="706" width="200" height="58" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
+    <text x="110" y="727" class="nl" fill="#0d9488">PIPELINE</text>
+    <text x="110" y="748" class="nt" fill="#0f766e" style="font-size:15px;">Won — converted</text>
+  </g>
+  <g>
+    <rect x="310" y="706" width="190" height="58" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="330" y="727" class="nl" fill="#dc2626">PIPELINE</text>
+    <text x="330" y="748" class="nt" fill="#b91c1c" style="font-size:15px;">Negative — removed</text>
+  </g>
+  <g>
+    <rect x="520" y="706" width="210" height="58" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+    <text x="540" y="727" class="nl" fill="#16a34a">PIPELINE</text>
+    <text x="540" y="748" class="nt" fill="#15803d" style="font-size:15px;">Long-term nurture</text>
   </g>
 
   <g>
-    <rect x="640" y="612" width="230" height="20" rx="4" fill="#fffbeb" stroke="#fcd34d" stroke-width="1"/>
-    <text x="755" y="626" text-anchor="middle" class="alab" fill="#d97706">&#9733; booked call &#8594; warm pipeline entry</text>
+    <rect x="1010" y="706" width="200" height="58" rx="10" fill="#fffbeb" stroke="#f59e0b" stroke-width="2.2"/>
+    <text x="1030" y="727" class="nl" fill="#b45309">CALCULATOR · &#9733;</text>
+    <text x="1030" y="748" class="nt" fill="#92400e" style="font-size:15px;">Call booked</text>
+  </g>
+  <g>
+    <rect x="1230" y="706" width="130" height="58" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <text x="1250" y="727" class="nl" fill="#64748b">CALCULATOR</text>
+    <text x="1250" y="748" class="nt" fill="#475569" style="font-size:14px;">No booking</text>
   </g>
 
-  <g>
-    <rect x="80" y="638" width="200" height="58" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
-    <text x="100" y="659" class="nl" fill="#0d9488">PIPELINE</text>
-    <text x="100" y="680" class="nt" fill="#0f766e" style="font-size:15px;">Won — converted</text>
-  </g>
-  <g>
-    <rect x="300" y="638" width="190" height="58" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
-    <text x="320" y="659" class="nl" fill="#dc2626">PIPELINE</text>
-    <text x="320" y="680" class="nt" fill="#b91c1c" style="font-size:15px;">Negative — removed</text>
-  </g>
-  <g>
-    <rect x="510" y="638" width="210" height="58" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
-    <text x="530" y="659" class="nl" fill="#16a34a">PIPELINE</text>
-    <text x="530" y="680" class="nt" fill="#15803d" style="font-size:15px;">Long-term nurture</text>
-  </g>
-
-  <g>
-    <rect x="1000" y="638" width="200" height="58" rx="10" fill="#fffbeb" stroke="#f59e0b" stroke-width="2.2"/>
-    <text x="1020" y="659" class="nl" fill="#b45309">CALCULATOR · &#9733;</text>
-    <text x="1020" y="680" class="nt" fill="#92400e" style="font-size:15px;">Call booked</text>
-  </g>
-  <g>
-    <rect x="1220" y="638" width="140" height="58" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 3"/>
-    <text x="1240" y="659" class="nl" fill="#64748b">CALCULATOR</text>
-    <text x="1240" y="680" class="nt" fill="#475569" style="font-size:14px;">No booking</text>
-  </g>
-
-  <line x1="40" y1="726" x2="1400" y2="726" stroke="#e5e7eb" stroke-width="1"/>
-  <g transform="translate(40,748)">
+  <!-- ============ LEGEND ============ -->
+  <line x1="40" y1="800" x2="1400" y2="800" stroke="#e5e7eb" stroke-width="1"/>
+  <g transform="translate(40,824)">
     <line x1="0" y1="0" x2="32" y2="0" stroke="#2563eb" stroke-width="2.2"/>
     <text x="40" y="4" class="leg">Enrolled in nurture pipeline</text>
     <line x1="240" y1="0" x2="272" y2="0" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5 4"/>
@@ -210,7 +222,7 @@
     <text x="560" y="4" class="leg">&#9733; Booked call &#8594; warm pipeline entry</text>
     <line x1="860" y1="0" x2="892" y2="0" stroke="#ea580c" stroke-width="2.2"/>
     <text x="900" y="4" class="leg">Calculator nurture flow</text>
-    <circle cx="1116" cy="0" r="4" fill="#64748b"/>
+    <circle cx="1116" cy="0" r="4.5" fill="#475569"/>
     <text x="1130" y="4" class="leg">Dual-enrolment point</text>
   </g>
 
